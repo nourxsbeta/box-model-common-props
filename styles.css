@@ -335,10 +335,10 @@ footer{
 */
 /* ADD SELECTOR AND STYLES HERE */
 #section2 a{
-    display:block;
+    display: block;
     text-decoration: none;
-    text-align:center;
-    font-display: 1.1rem;
+    text-align: center;
+    font-size: 1.1rem;  
     font-weight: bold;
     width: 50%;
     box-shadow: var(--box-shadow-lg);
@@ -439,7 +439,7 @@ footer{
     display: block;
     width: 200px;
     height: auto;
-    margin: 0 center;
+    margin: 0 auto;  
     filter: var(--filter-shadow-sm);
     
 }
@@ -515,6 +515,7 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
+    margin: 1rem 0;
 
 }
 
@@ -552,6 +553,10 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
+    background-color: var(--lt-blue);
+    background-image: url("images/puppy-photo.jpg");
+    background-repeat: repeat;
+    background-position: center;
     
 }
 
@@ -579,7 +584,9 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+    background-color: var(--light-gray);
+    background-image: url("images/wood.png");
+    background-size: 110%;
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -592,6 +599,7 @@ footer{
 /* For the third div, let's add the pattern called double-bubble. It's from Subtle Patterns and is in a web-friendly image format called webp */
 #pattern3{
     background: var(--teal) url("images/overlapping-tiles.png");
+    background-repeat: repeat;
 }
 
 /* The fourth div is displaying some CSS that creates a houndstooth pattern, from the CSS3 Patterns gallery */
@@ -636,6 +644,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -645,6 +654,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear: both;
     
 }
 
